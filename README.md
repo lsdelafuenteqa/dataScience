@@ -15,7 +15,9 @@ The documents includes:
   
 # Acámica Projects
 The following projects was developing in Data Science Course in Acámica.
+
     Inmobiliaria Properati
+    
     Movies Reviews
 
 # Personal Projects
