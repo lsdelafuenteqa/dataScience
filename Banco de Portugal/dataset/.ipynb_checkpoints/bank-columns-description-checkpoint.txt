@@ -1,0 +1,32 @@
+﻿# Datos personales y bancarios:
+1 - age: edad. Numérica.
+2 - job: tipo de trabajo. Categórica: ["admin.","blue-collar","entrepreneur","housemaid","management","retired","self-employed","services","student","technician","unemployed","unknown"].
+3 - marital: estado civil. Categórica: ["divorced","married","single","unknown"; nota: "divorced" es divorciado/a o viudo/a].
+4 - education: educación. Categórica: ["basic.4y","basic.6y","basic.9y","high.school","illiterate","professional.course","university.degree","unknown"].
+5 - default: tiene crédito impago. Categórica: ["no","yes","unknown"].
+6 - housing: tiene préstamo hipotecario. Categórica: ["no","yes","unknown"].
+7 - loan: tiene préstamo personal. Categórica: ["no","yes","unknown"].
+
+# Relacionado con el último contacto de la campaña actual:
+8 - contact: medio de contacto. Categórica: ["cellular","telephone"].
+9 - month: mes del último contacto. Categórica: ["jan", "feb", "mar", ..., "nov", "dec"].
+10 - day_of_week: dia de la semana del último contacto. Categórica: ["mon","tue","wed","thu","fri"].
+
+# Otros atributos:
+11 - campaign: numero de contactos realizados durante esta campaña para este cliente. Numérica (incluye el último contacto).
+12 - pdays: número de días que pasaron desde el último contacto al cliente por una campaña anterior. Numérica (999 significa que el cliente no ha sido contactado con anterioridad).
+13 - previous: numero de contactos realizados previo a esta campaña para este cliente. Numérica.
+14 - poutcome: resultado de la campaña de marketing anterior. Categórica: ["failure","nonexistent","success"].
+
+# Contexto socio-económico:
+15 - emp.var.rate: Tasa de variación de empleo. Indicador cuartílico. Numérica.
+16 - cons.price.idx: Índice de precio de consumidor. Indicador mensual. Numérica.
+17 - cons.conf.idx: Índice de confianza de consumidor. Indicador mensual. Numérica.
+18 - euribor3m: Tasa Euríbor (3 meses). Indicador diario. Numérica.
+19 - nr.employed: número de empleados. Indicador cuartílico. Numérica.
+
+# Variable objetivo:
+20 - y: ¿se suscribió el cliente al plazo fijo? Binario ["yes","no")
+
+Nota
+Hay muchos valores faltantes en algunas variables categóricas, todas codificadas como "unknown". Estos valores faltantes pueden ser tratados como una posible clase o bien se los puede eliminar, o utilizar alguna técnica de imput.
